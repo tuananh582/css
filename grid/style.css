@@ -1,0 +1,77 @@
+.el-1{
+   background-color: violet; 
+}
+.el-2{
+   background-color: brown; 
+   /* grid-column: 1/2; */
+   /* grid-row: 1/2; */
+   /* grid-column: 1/ -1; */
+   /* grid-column: 1/ span 3; */
+   /* grid-column: 1/4; sam span 3 */
+   /* grid-row: 2; */
+}
+.el-3{
+   background-color: aqua; 
+   /* grid-column: 1/2; */
+
+
+}
+.el-4{
+   background-color: blanchedalmond; 
+}
+.el-5{
+   background-color: cadetblue; 
+}
+.el-6{
+   background-color: gray; 
+   /* grid-row: 3/5; */
+}
+.el-7{
+   background-color: chartreuse;
+}
+.el-8{
+   background-color: chocolate;
+   grid-column: 2/3;
+   /* grid-row: 1/2; */
+   grid-row: 1/-1;
+}
+.container{
+    background-color: black;
+    margin: 40px;
+    font-size: 40px;
+
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    height: 500px;
+    /* grid-template-rows: 300px 200px; */
+   column-gap: 20px;
+    row-gap: 60px;
+    display: none;
+}
+.container-2{
+    font-family: sans-serif;
+    background-color: black;
+    font-size: 40px;
+    margin: 40px;
+    width: 700px;
+    height: 600px;
+    display: grid;
+  grid-template-columns: 125px 200px 125px;
+  grid-template-rows: 250px 100px;
+    gap: 50px;
+  /* Aligining tracks inside container  */
+  /* distribute empty space */
+    justify-content: center ;
+    /* justify-content: space-between ; */
+    align-content: end;
+
+    /* Aligining items INSIDe cells */
+    align-items: end;
+    justify-items: end;
+}
+.el-3{
+    align-self: center;
+    justify-self: center ;
+}

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+nav{
+    background-color: #343a40;
+    color: white;
+    grid-row: 1/-1;
+}
+body{
+    color: #343a40;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 80px 400px 1fr 250px ;
+    grid-template-rows: 80px 1fr;
+    height: 100vh;
+    text-align: center;
+    font-weight: bold;
+    background-color: grey;
+}
+nav,section,aside,main{
+    padding-top: 24px;
+
+
+}
+menu{
+    display: flex;
+    align-items: center;
+    grid-column: 2/-1;
+    gap: 12px;
+    padding: 0 40px;
+    justify-content: space-between;
+}
+section{
+    background-color: #ded1e3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll; 
+    gap: 40px;   
+}
+.email{
+    display: flex;
+    flex-shrink: 0;
+    height: 96px;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:#5f3dc4;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+button:last-child{
+    background-color:#d6336c ;
+    right: 0;
+    margin-left: auto;
+}

@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-header{
+    background-color: aquamarine;
+    padding: 20px 40px;
+    margin-bottom: 60px;
+}
+h1{
+    float: left;
+}
+nav{
+    float: right;
+}
+.clearfix::after{
+    clear: both;
+    content: '';
+    display: block;
+    /* clear fix only work with display block */
+}
+p:first-child{
+    background-color: aqua;
+    padding: 20px 40px;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+p:last-child{
+    background-color: beige;
+    padding: 20px 40px;
+    margin-top: 10px;
+    /* order: -1; */
+}
+p:nth-child(2){
+    background-color: aqua;
+    padding: 20px 40px;
+    margin-top: 10px;
+
+}
+p:nth-child(3){
+    background-color: aqua;
+    padding: 20px 40px;
+    margin-top: 10px;
+    order: 2;
+    flex-grow: 1;
+}
+p:nth-child(4){
+    background-color: aqua;
+    padding: 20px 40px;
+    height: 143px;
+    margin-top: 10px;
+    order: 1;
+   
+}
+p:nth-child(5){
+    background-color: aqua;
+    padding: 20px 40px;
+    margin-top: 10px;
+}
+.containerflex{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    margin: 40px;
+    background-color: blue;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+
+}
+.el{
+    /* flex-basis: 200px; */
+   flex-shrink: 0;
+    /* flex-grow: 1; */
+}
+/* align self : it self  order:using to move */
+/* flex grow filled up entire flex container */
